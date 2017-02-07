@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :gifts
   resources :photos
   resources :travels
   resources :stories
