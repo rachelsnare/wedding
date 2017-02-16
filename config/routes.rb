@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
   get 'static_pages/home'
+  get '/rsvp', to: 'guests#new'
 
   resources :gifts
   resources :photos
