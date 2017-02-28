@@ -11,6 +11,7 @@
       <div class="post">
         <h2 class="title"><%= story.title %></h2>
         <h3 class="content"><%= story.content %></h3>
+        <%= image_tag story.image.url(:medium) %>
       </div>
    </div>   
     <% end %>
