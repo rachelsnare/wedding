@@ -30,24 +30,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="stories"><%= t 'nav.story' %></a>
-                    </li>
-                    <li>
-                        <a href="events"><%= t 'nav.events' %></a>
-                    </li>
-                    <li>
-                        <a href="travels"><%= t 'nav.travel' %></a>
-                    </li>
-                    <li>
-                        <a href="rsvp"><%= t 'nav.rsvp' %></a>
-                    </li>
-                    <li>
-                        <a href="gifts"><%= t 'nav.gifts' %></a>
-                    </li>
-                    <li>
-                        <a href="photos"><%= t 'nav.photos' %></a>
-                    </li>                    
+                    <li><%= link_to "Story", stories_path %></li>
+                    <li><%= link_to "Events", events_path %></li>
+                    <li><%= link_to "Travel", travels_path %></li>
+                    <li><%= link_to "RSVP", rsvp_path %></li>
+                    <li><%= link_to "Gifts", gifts_path %></li>
+                    <li><%= link_to "Photos", photos_path %></li>                  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
