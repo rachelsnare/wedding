@@ -11,7 +11,7 @@
       <div class="post">
         <h2 class="title"><%= event.event_name %></h2>
         <div class="date_time"><h4><%= event.event_date %>, <%= event.event_time %></h4></div>
-        <h3><%= event.event_location %></h3>
+        <h3 class="location">Location: <%= event.event_location %>. <%= link_to "Click to map", event.map %></h3>
         <h3 class="content"><%= event.event_content %></h3>
       </div>
    </div>   
