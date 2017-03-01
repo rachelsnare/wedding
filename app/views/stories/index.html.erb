@@ -6,7 +6,7 @@
 <h1>Stories</h1>
 
   <tbody>
-    <% @stories.each do |story| %>
+    <% @stories.order(:id).each do |story| %>
    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> 
       <div class="post">
         <h2 class="title"><%= story.title %></h2>
