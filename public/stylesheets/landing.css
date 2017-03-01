@@ -21,6 +21,10 @@ h6 {
     font-weight: 700;
 }
 
+.navbar-default {
+    margin-bottom: 0px; 
+}
+
 .topnav {
     font-size: 14px; 
 }
