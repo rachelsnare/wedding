@@ -16,3 +16,13 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ h1 {
+    margin-left: 16.66666667%;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    color: #777;
+    font-weight: 700;
+    text-transform: none;
+}
