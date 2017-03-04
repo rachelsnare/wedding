@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
-   <head>
+
+    <head>
     <title>Rachel & Ignacio's Wedding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag "pages" %>    
+
+        <!-- Bootstrap Core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/css/creative.min.css" rel="stylesheet">  
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,22 +26,20 @@
 
   <body>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand"<%= link_to "Rachel & Ignacio", root_path %></a>
-                <!--<%= link_to "Rachel & Ignacio", "/#{I18n.locale}/" %>-->
+                <a class="navbar-brand page-scroll" href="/#page-top">Rachel & Ignacio</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to "Story", stories_path %></li>
+                    <li><%= link_to "Our Story", stories_path %></li>
                     <li><%= link_to "Events", events_path %></li>
                     <li><%= link_to "Travel", travels_path %></li>
                     <li><%= link_to "RSVP", rsvp_path %></li>
@@ -37,8 +49,16 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
+
+
+
+
+
+
+
+
 
  
 <!--     <div class="language" id="lang">
