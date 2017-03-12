@@ -28,6 +28,10 @@ h2 {
     font-weight: 700;
 }
 
+hr {
+    max-width: none;
+}
+
 .topnav {
     font-size: 14px;
     
